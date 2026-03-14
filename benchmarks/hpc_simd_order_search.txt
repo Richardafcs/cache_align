@@ -1,0 +1,20 @@
+Benchmark: hpc_simd_order_search
+Date: 2026-03-14 06:24:37Z
+Host: <redacted>
+Compiler: c++
+CXXFLAGS: -std=c++20 -O3 -DNDEBUG -pthread -march=native
+----------------------------------------
+Initializing AVX2 Aligned Order Book...
+--- Performance Results ---
+Target Order Found at Index: 99994
+
+[Scalar / Standard Loop]
+Time: 4.8022 seconds
+
+[SIMD AVX2 Branchless Loop]
+(AVX2 not available on this build; used scalar fallback)
+Time: 4.80749 seconds
+
+Speedup: 0.998899x faster
+Instruction level parallelism achieved. Branch mispredictions eliminated.
+

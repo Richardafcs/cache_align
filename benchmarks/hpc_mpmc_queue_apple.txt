@@ -1,0 +1,13 @@
+Benchmark: hpc_mpmc_queue_apple
+Date: 2026-03-14 06:24:34Z
+Host: <redacted>
+Compiler: c++
+CXXFLAGS: -std=c++20 -O3 -DNDEBUG -pthread -march=native
+----------------------------------------
+Initializing Vyukov MPMC Queue...
+--- MPMC Contention Benchmark Completed ---
+Items Pushed: 5000000
+Items Popped: 5000000
+Time elapsed: 0.704249 seconds
+Throughput  : 7.09977 Million Ops/sec
+

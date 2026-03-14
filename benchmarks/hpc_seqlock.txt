@@ -1,0 +1,12 @@
+Benchmark: hpc_seqlock
+Date: 2026-03-14 06:24:37Z
+Host: <redacted>
+Compiler: c++
+CXXFLAGS: -std=c++20 -O3 -DNDEBUG -pthread -march=native
+----------------------------------------
+Initializing HPC Seqlock...
+--- Seqlock Benchmark Completed ---
+Time elapsed: 0.0837766 seconds
+Total concurrent torn-free reads achieved: 85705764
+Read throughput: 1023.03 Million Reads/sec
+

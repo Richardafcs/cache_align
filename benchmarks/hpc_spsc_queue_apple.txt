@@ -1,0 +1,17 @@
+Benchmark: hpc_spsc_queue_apple
+Date: 2026-03-14 06:24:47Z
+Host: <redacted>
+Compiler: c++
+CXXFLAGS: -std=c++20 -O3 -DNDEBUG -pthread -march=native
+----------------------------------------
+Hardware Destructive Interference Size: 128 bytes
+
+--- Naive Queue (False Sharing & seq_cst) ---
+Time elapsed : 1.78203 seconds
+Throughput   : 28.0578 Million Ops/sec
+
+--- Optimized Queue (Cache Isolated & Memory Order) ---
+Time elapsed : 0.103433 seconds
+Throughput   : 483.404 Million Ops/sec
+
+

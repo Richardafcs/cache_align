@@ -1,0 +1,22 @@
+Benchmark: hpc_tsc_telemetry
+Date: 2026-03-14 06:24:51Z
+Host: <redacted>
+Compiler: c++
+CXXFLAGS: -std=c++20 -O3 -DNDEBUG -pthread -march=native
+----------------------------------------
+Calibrating Hardware TSC ticks to nanoseconds...
+Calibration complete. CPU Frequency: 999.998 MHz
+
+Starting multi-threaded workload with zero-cost telemetry...
+Workload completed.
+
+--- Telemetry Analysis ---
+Thread 1 events: 1000000
+Thread 0 events: 1000000
+Thread 2 events: 1000000
+Thread 3 events: 1000000
+Total events: 4000000
+System is capable of profiling nanosecond-level logic without OS perturbation.
+Event structure size: 16 bytes.
+Cache lines dirtied per event: 0.25 (4 events fit in 1 cache line).
+

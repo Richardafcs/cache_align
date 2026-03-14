@@ -1,0 +1,11 @@
+Benchmark: hpc_urcu
+Date: 2026-03-14 06:24:52Z
+Host: <redacted>
+Compiler: c++
+CXXFLAGS: -std=c++20 -O3 -DNDEBUG -pthread -march=native
+----------------------------------------
+Initializing HPC Userspace RCU Domain...
+--- RCU Simulation Completed ---
+Time elapsed: 1.19215 seconds
+Total pointer reads achieved: 5092131921
+

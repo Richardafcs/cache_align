@@ -1,0 +1,12 @@
+Benchmark: hpc_seqlock_apple
+Date: 2026-03-14 06:24:36Z
+Host: <redacted>
+Compiler: c++
+CXXFLAGS: -std=c++20 -O3 -DNDEBUG -pthread -march=native
+----------------------------------------
+Initializing HPC Seqlock...
+--- Seqlock Benchmark Completed ---
+Time elapsed: 0.0898168 seconds
+Total concurrent torn-free reads achieved: 16413183
+Read throughput: 182.741 Million Reads/sec
+

@@ -1,0 +1,11 @@
+Benchmark: hpc_kernel_bypass_rx
+Date: 2026-03-14 06:24:26Z
+Host: <redacted>
+Compiler: c++
+CXXFLAGS: -std=c++20 -O3 -DNDEBUG -pthread -march=native
+----------------------------------------
+Simulating PCIe DMA hardware injections...
+Starting zero-copy polling loop on isolated core...
+Total packets processed: 50
+Zero-copy network layer successfully simulated.
+

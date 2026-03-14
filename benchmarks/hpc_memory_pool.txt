@@ -1,0 +1,17 @@
+Benchmark: hpc_memory_pool
+Date: 2026-03-14 06:24:30Z
+Host: <redacted>
+Compiler: c++
+CXXFLAGS: -std=c++20 -O3 -DNDEBUG -pthread -march=native
+----------------------------------------
+Initializing Lock-Free ABA-Safe Memory Pool...
+Starting benchmark across 4 threads...
+=================================================
+STRESS TEST COMPLETED
+=================================================
+Total Operations : 40000000 (allocs + frees)
+Total Time       : 2744 ms
+Latency per Op   : 68.6028 ns/op
+Throughput       : 14.5773 Million Ops/sec
+=================================================
+
