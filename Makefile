@@ -25,7 +25,7 @@ bench: $(BINS) | $(BENCH_DIR)
 		{ \
 			echo "Benchmark: $$name"; \
 			echo "Date: $$(date -u '+%Y-%m-%d %H:%M:%SZ')"; \
-			echo "Host: $$(uname -a)"; \
+			echo "Host: $$(uname -s) $$(uname -m)"; \
 			echo "Compiler: $(CXX)"; \
 			echo "CXXFLAGS: $(CXXFLAGS)"; \
 			echo "----------------------------------------"; \
