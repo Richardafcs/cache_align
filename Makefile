@@ -5,6 +5,7 @@ LDFLAGS ?=
 SRC := $(wildcard *.cpp)
 BIN_DIR := bin
 BENCH_DIR := benchmarks
+TEST_DIR := tests
 BINS := $(patsubst %.cpp,$(BIN_DIR)/%,$(SRC))
 
 all: $(BINS)
@@ -34,7 +35,13 @@ bench: $(BINS) | $(BENCH_DIR)
 		echo >> $$out; \
 	done
 
+bench-smoke: $(BINS)
+	@./scripts/bench_smoke.sh
+
+test: $(BINS)
+	@./tests/smoke.sh
+
 clean:
 	rm -rf $(BIN_DIR) $(BENCH_DIR)
 
-.PHONY: all bench clean
+.PHONY: all bench bench-smoke test clean

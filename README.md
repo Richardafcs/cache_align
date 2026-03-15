@@ -45,6 +45,22 @@ make bench
 
 This writes one output file per binary into `benchmarks/` with metadata and results.
 
+For a quick wall-clock benchmark run:
+
+```bash
+make bench-smoke
+```
+
+This writes a single summary file to `benchmarks/bench_smoke.txt`.
+
+## Tests
+
+```bash
+make test
+```
+
+This runs a smoke test that executes each binary and checks for expected output markers.
+
 ## Notes
 
 - These are educational, production-style implementations intended to show performance patterns and hardware-aware techniques.
